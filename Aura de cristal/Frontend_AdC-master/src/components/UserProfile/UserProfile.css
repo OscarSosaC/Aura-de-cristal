@@ -1,0 +1,153 @@
+.user-profile-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile-layout {
+    display: flex;
+    width: 100%;
+}
+
+.user-profile-tabs {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-right: 2px solid #ccc;
+    padding-right: 20px;
+}
+
+.user-profile-tabs .tab-link {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    border-left: 4px solid transparent;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.user-profile-tabs .tab-link.active {
+    border-left: 4px solid #007bff;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.user-profile-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.user-profile-tab-content {
+    display: none;
+}
+
+.user-profile-tab-content.active {
+    display: block;
+}
+
+.user-profile-form-group {
+    margin-bottom: 15px;
+}
+
+.user-profile-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.user-profile-form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.user-profile-orders-table, .user-profile-address-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-profile-orders-table th, .user-profile-orders-table td, .user-profile-address-list th, .user-profile-address-list td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.user-profile-orders-table th, .user-profile-address-list th {
+    background-color: #f1f1f1;
+}
+
+.user-profile-btn-detail {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user-profile-favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.user-profile-favorite-item {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.user-profile-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.user-profile-button:hover {
+    background-color: #0056b3;
+}
+
+.user-profile-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+
+
+@media (min-width: 300px) and (max-width: 1024px) {
+
+    .user-profile-container {
+        margin-top: 5rem;
+    }
+
+    .user-profile-content {
+        margin-top: 1rem;
+    }
+    
+}

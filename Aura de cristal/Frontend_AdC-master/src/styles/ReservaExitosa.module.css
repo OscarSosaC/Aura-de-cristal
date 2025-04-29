@@ -1,0 +1,235 @@
+.articulo{
+    border: 1px solid #A3A3A1;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.imagen {
+    width: 150px;      /* La imagen se ajusta al ancho del contenedor */
+    height: 150px;     /* La altura se ajusta para mantener la proporción */
+    object-fit: cover; /* Asegura que la imagen llene el contenedor sin deformarse */  
+}
+
+.nombreProducto{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 34.82px;
+    text-align: left;
+    color: black;
+}
+
+.descripcionProducto, .fechasSeleccionada{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+}
+
+.div1_2_desde, .div1_2_hasta{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    width: 50%;
+}
+
+.div1_2_hasta{
+    padding-left: 17rem;
+    border-left: 1px solid #A3A3A1;
+}
+
+
+.div1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid #A3A3A1;
+    margin: 3rem 0px 0px;
+    /* Padding individual por lado: top, right, bottom, left */
+    padding: 0px 1.3rem 1rem 1.3rem;
+    gap: 1.5rem;
+
+}
+
+.fechasSeleccionada{
+    font-size: 16px;
+    text-align: center;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.titulo{
+    background-color: transparent;
+    width: 50%;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.informacion, .nombre, .correo, .informacion2{
+    text-align: left;
+    font-size: 23px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.informacion{
+    padding-left: 1rem;
+}
+
+.nombre, .correo{
+    font-size: 18px;
+    width: 45%;
+}
+
+.datosUsuario{
+    font-size: 16px;
+    text-align: center;
+    width: 45%;
+}
+
+.datosPoliticas{
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    padding-left: 1rem;
+    text-decoration: underline;
+}
+
+.div2, .div3{
+    border-bottom: 1px solid #A3A3A1;
+    margin: 3rem 0px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.div2_1{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.div3{
+    border-bottom: none;
+
+}
+
+.informacion2{
+    width: 45%;
+}
+
+.botonCancelar, .botonReservar{
+    width: 35%;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid black;
+}
+
+.botonCancelar{
+  background-color: black;
+}
+
+ .botonReservar{
+   background-color: #8D3434CC;
+}
+
+.div1_imagenes{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.div1_fechas{
+    display: flex;
+}
+
+.tituloVolver {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: center;
+    color: #565656;
+    text-decoration: underline;
+    width: 100%;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.contenedorPoliticasDelProducto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline: 1.3rem;
+    row-gap: 25px;
+    width: 261px; /* Para coincidir con el tamaño del boton de reserva*/
+}
+
+.tituloPoliticasDelProducto {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.enlacePoliticasDelProducto {
+    font-style: italic;
+    text-decoration: underline !important;
+    color: currentColor;
+}
+
+/* Cuando la pantalla es de 900px o menos */
+@media (max-width: 600px) or (max-width: 1024px) {
+
+.articulo{
+    width: 90%;
+}
+
+.div1_1{
+    width: 100%; 
+}
+
+.div1_imagenes{
+    display: grid;
+    grid-template-columns: 45% 45%;
+}
+
+.imagen {
+    width: 96%;      /* La imagen se ajusta al ancho del contenedor */
+    height: 96%;
+    margin-bottom: 1rem;     /* La altura se ajusta para mantener la proporción */ 
+}
+
+.div1_2_hasta{
+    padding-left: 20%;
+    border-left: 1px solid #A3A3A1;
+}
+
+.titulo{
+    margin-top: 60px;
+    width: 100%;
+}
+
+.tituloVolver{
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.principal{
+    margin-top: 3px;
+}
+
+
+}

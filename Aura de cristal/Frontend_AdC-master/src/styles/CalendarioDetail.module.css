@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divPrincipal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+
+.botonFechas {
+    background-color: transparent;
+}
+
+.boton {
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+}
+
+.fechasSeleccionada {
+    border: 1px solid #A3A3A1;
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.fechas{
+    text-align: center;
+    margin-top: 0.5rem;
+    
+}
+
+.iconoCerrar {
+    font-size: 20px;
+    color: gray;
+}
+
+.divIconoCerrar {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.botonIconoCerrar {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.botonGuardarFecha {
+    background-color: #DBA643CC;
+    color: white;
+    padding: 0.7rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.mensajeError {
+    color: red;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mensajeExito {
+    color: green;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.botonGuardarFecha:hover {
+    background-color: rgba(217, 183, 91, 0.7);
+}
+
+.calendario{
+    background-color: transparent;
+}
+/* Cuando la pantalla es de 900px o menos */
+@media (max-width: 900px) {
+.calendario {
+    width: fit-content;
+    padding-bottom: 15px;
+
+    :first-child {
+        width: auto;
+        height: auto;
+        align-items: self-end;
+
+        :nth-child(2) {
+            display: grid;
+
+        }
+    }
+
+}
+}

@@ -1,0 +1,104 @@
+.panel-administracion {
+    background-color: #f8e9cf;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: auto;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.caracteristicas-lista {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.caracteristica-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icono {
+    font-size: 22px;
+    margin-right: 12px;
+}
+
+.nombre {
+    flex: 1;
+    font-size: 16px;
+    color: #555;
+}
+
+.editar-boton, .eliminar-boton {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.editar-boton {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.eliminar-boton {
+    background-color: #e57373;
+    color: white;
+}
+
+.agregar-boton {
+    margin-top: 20px;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.agregar-boton:hover {
+    background-color: #ffe0b2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.volver-boton {
+    background-color: transparent;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.titulo, .tituloBusqueda{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 69.65px;    
+    color:rgba(142, 107, 50, 0.4);
+}
+
+.categorias, .busqueda{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.busqueda{
+    margin-top: 20px;
+    background-color: #EBE9E980;
+}
+
+.cardGrid{
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.cardImg {
+    width: 70%;      /* La imagen se ajusta al ancho del contenedor */
+    height: 250px;     /* La altura se ajusta para mantener la proporción */
+    object-fit: cover; /* Asegura que la imagen llene el contenedor sin deformarse */
+    border-radius: 40px;   
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;  
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin-bottom: 5%;
+  }
+  
+.nombreCategorias, .tituloNoResultados{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34.82px;
+    text-align: center;
+    color: black;
+}
+
+.recomendacionesPiezas, .precioBusqueda{
+    width: 70%; 
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.piezas, .calificacion{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 29.05px;
+    text-align: center;  
+}
+
+.calificacion{
+    font-weight: 500; 
+}
+
+.link{
+    width: 100%;
+    text-align: center;
+}
+
+.iconoCerrar{
+    font-size: 20px;
+    color: gray;
+}
+
+.botonIconoCerrar{
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.tituloNoResultados{
+    text-align: center;
+    padding-bottom: 30px;
+}
+/* Cuando la pantalla es de 900px o menos */
+@media (max-width: 600px) or (max-width: 1024px)  {
+    .piezas, .calificacion{
+        font-size: 14px;       
+    }
+
+    .cardGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Crea dos columnas de igual tamaño */
+        gap:40px;
+    }
+
+    .card{
+        width: 80%;  
+        margin: auto;
+    }
+    
+    .titulo{
+        text-align: center;
+    }
+
+    .recomendacionesPiezas, .precioBusqueda{
+        display: contents;
+    }
+
+    .nombreCategorias, .tituloNoResultados{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34.82px;
+        text-align: center;
+        color: black;
+    }
+}

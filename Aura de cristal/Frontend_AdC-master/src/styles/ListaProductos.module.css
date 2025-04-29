@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.titulo{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 69.65px;    
+    color:rgba(142, 107, 50, 0.4);
+    text-align: center;
+}
+
+.botonesPrincipales{
+    width: 300px;
+    height: 63px;
+    border-radius: 20px;
+    border: 1px black solid;
+    background-color:#DBBD6B66; 
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 19.36px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.botones{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccionPrincipal{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+
+.tituloVolver{
+    font-family: 'Inter', sans-serif; /* Cambia 'p' a cualquier otro selector según lo necesites */
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: center;
+    color:#565656;
+    text-decoration: underline; /* Subrayar todos los enlaces */
+    width: 100%;
+    display: flex;
+    padding-left: 15%;
+}
+
+.divTituloAgregar{
+    width: 864px;
+    height: 80px;
+    border-radius: 30px;
+    opacity: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloAgregar{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29.05px;
+    text-align: center;
+    display: flex;
+    justify-content: center;     /* Centra horizontalmente */
+    align-items: center;
+    padding-top: 2%;
+}
+
+.registrarProducto{
+    display: flex;
+    padding: 40px 0px;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+.inputsFormulario{
+    padding: 5px 30px; /* 10px arriba y abajo, 20px a los lados */
+    background-color: transparent; /* Sin color de fondo */
+    outline: none; 
+}
+.botoneRegistrar{
+    width: 200px;
+    height: 43px;
+    border-radius: 20px;
+    border: 1px black solid;
+    background-color:#DBBD6B66; 
+    font-family: 'Inter', sans-serif; /* Cambia 'p' a cualquier otro selector según lo necesites */
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 19.36px;
+    text-align: center;
+}
+
+.mensajeMovil{
+    display: none; /* Mensaje de móvil oculto */
+}
+
+/* aqui inicio */
+
+.botonesEliminar, .botonesEditar{
+    background-color: #000000;
+    color: white;
+    padding: .5rem 1rem;
+    margin-left: 2rem;
+    border-radius: .3rem;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: center;
+    margin: 10px;
+}
+.botonesEliminar{
+    background-color: #8D3434CC;
+}
+
+/* aqui fin */
+
+
+
+
+/* estilos tabla inicio */
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0 auto; /* Centra la tabla horizontalmente */    
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* estilos tabla fin */
+
+/* Mensaje de móvil oculto */
+
+.botonMovil{
+    display: none; /* Mensaje de móvil oculto */
+}
+
+.fraseMovil{
+    display: none; /* Mensaje de móvil oculto */
+}
+
+.frase2Movil{
+    display: none; /* Mensaje de móvil oculto */
+}
+
+/* Mensaje de móvil oculto fin */
+
+.mensajeForm{
+    font-family: 'Inter', sans-serif; /* Cambia 'p' a cualquier otro selector según lo necesites */
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 19.36px;
+    text-align: center;
+}
+
+/* estilo producto */
+.productos{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap:60px;
+}
+.cardGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea dos columnas de igual tamaño */
+    gap:40px;
+}
+.cardImg {
+    width: 90%;      /* La imagen se ajusta al ancho del contenedor */
+    height: 250px;     /* La altura se ajusta para mantener la proporción */
+    object-fit: cover; /* Asegura que la imagen llene el contenedor sin deformarse */
+    border-radius: 40px;   
+}
+.card{
+  display: flex;
+  }
+  
+.nombreProducto,.descripcionProducto,.precioProducto{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34.82px;
+    text-align: center;
+}
+.link{
+    text-align: center;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descripcionProducto{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    height: auto;
+}
+.precioProducto{
+    font-size: 14px;
+    font-weight: 500;
+}
+.datos{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Fin estilo producto */
+
+/* Cuando la pantalla es de 900px o menos */
+@media (max-width: 600px) and (max-width: 1024px) {
+    .seccionPrincipal, .registrarProducto{
+        display: none; /* Oculta el mensaje de escritorio */
+    }
+    
+/* reagregado inicio*/
+    .cardImg {
+        height: 350px;     /* La altura se ajusta para mantener la proporción */
+    }
+    .cardGrid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Crea dos columnas de igual tamaño */
+        gap:40px;
+        width: 100%;
+    }
+    .productos{
+        padding: 10px;
+    }
+/* reagregado fin*/
+
+    .mensajeMovil{
+        display: block; /* Muestra el mensaje de móvil */
+        height: 429px;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-between;
+        width: 70%;
+        margin:40% auto;
+    }
+
+    .fraseMovil, .frase2Movil{
+        display: block; /* Muestra el mensaje de móvil */
+        font-family: 'Inter', sans-serif; /* Cambia 'p' a cualquier otro selector según lo necesites */
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.5; /* Espaciado entre líneas */
+        background-color: #FFFFFF;
+    }
+
+    .fraseMovil{
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .botonMovil{
+        display: block;
+        width: 200px;
+        height: 63px;
+        border-radius: 20px;
+        border: 1px black solid;
+        background-color:#565656; 
+        font-family: 'Inter', sans-serif; /* Cambia 'p' a cualquier otro selector según lo necesites */
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 19.36px;
+        text-align: center;
+        margin: auto;
+    }
+}

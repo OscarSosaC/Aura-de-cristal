@@ -1,0 +1,21 @@
+.right-side {
+    padding-left: 20%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Navbar.css */
+.user-initials {
+    width: 35px;
+    height: 35px;
+    background-color: #655e5e;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}

@@ -1,0 +1,27 @@
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=aura_de_cristal
+DB_USER=root
+DB_PASSWORD=root
+
+
+#DE RAILWAY
+DB_HOST=mysql.railway.internal
+DB_PORT=3306
+DB_NAME=railway
+DB_USER=root
+DB_PASSWORD=mhzRCBPGJNPJPIGZlWsENYmqfZXfhAFp
+	    mhzRCBPGJNPJPIGZlWsENYmqfZXfhAFp
+Public Url: mysql://root:mhzRCBPGJNPJPIGZlWsENYmqfZXfhAFp@junction.proxy.rlwy.net:58490/railway
+
+Swagger UI: https://auradecristalapi-development.up.railway.app/swagger-ui/index.html#/
+
+#DATA NUEVO DEPLOY DE RAILWAY
+DB_HOST=mysql.railway.internal
+DB_PORT=3306
+DB_NAME=railway
+DB_USER=root
+DB_PASSWORD=jZfqaGgxCKzfBbWaBnsBRpiJCXVJcHDL
+Public Url: mysql://root:jZfqaGgxCKzfBbWaBnsBRpiJCXVJcHDL@junction.proxy.rlwy.net:10241/railway
+
+Swagger UI: https://auradecristalapi-production.up.railway.app/swagger-ui/index.html#/

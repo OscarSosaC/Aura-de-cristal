@@ -1,0 +1,73 @@
+.registro {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.title-form {
+  font-family: Kaushan Script;
+  font-size: 40px;
+  color: #655e5e;
+  margin-top: 3%;
+}
+
+.text {
+  padding-bottom: 4%;
+}
+
+.btn-c {
+  width: 150px;
+  height: 39px;
+}
+
+label {
+  font-weight: bold;
+  padding-right: 50px;
+}
+
+.img-reg {
+  width: 100px;
+  height: 80px;
+}
+
+.holder-style {
+  width: 500px;
+  height: 50px;
+  border: 1px solid #080808;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.text-2 {
+  padding-bottom: 2%;
+}
+
+/* Adaptación para dispositivos móviles y tabletas */
+@media (min-width: 300px) and (max-width: 1024px) {
+  .register {
+    width: 100vh;
+    height: 100vh;
+    margin-bottom: auto;
+  }
+
+  .text {
+    padding-bottom: 5%;
+  }
+
+  .text-2 {
+    padding-bottom: 5%;
+  }
+
+  .title-form {
+    margin-top: 20%;
+  }
+
+  .holder-style {
+    width: 230px;
+    height: 30px;
+  }
+}
+
+

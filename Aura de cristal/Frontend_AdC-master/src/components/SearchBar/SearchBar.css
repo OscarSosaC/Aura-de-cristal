@@ -1,0 +1,139 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    background-color: #EBE9E980;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.search-input {
+    margin: 18px 0;
+    text-align: center;
+    background-color: transparent;
+    width: 30px;
+}
+
+/* Estilo del fondo superpuesto */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    height: 100%;  
+}
+
+/* Estilo del contenido del modal */
+.modal-content {
+    background: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-height: 500px;
+    text-align: center;
+    z-index: 1010; /* Asegura que esté sobre el overlay */
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Botón para abrir el modal */
+.open-modal-button {
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.botonBuscador{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #DBA643CC;
+    color: white;
+}
+
+.botonBuscador:hover {
+    background-color: rgba(217, 183, 91, 0.7);
+}
+
+.search-bar{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.rangoFechas{
+    color: #565656;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.divBotonFechas{
+    text-align: left;
+}
+
+.buscadorParte2{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.open-modal-button:hover {
+    background-color: rgba(219, 189, 107, 0.4);
+}
+
+
+@media (max-width: 600px) or (max-width: 1024px) {
+    .form {
+        margin-top: 80px;
+        width: 90%;
+    }
+
+    .search-input::placeholder {
+        font-size: 0.6rem; /* Tamaño reducido del texto del placeholder */
+      }
+
+    .botonBuscador{
+        display: flex; /* Asegura que podamos alinear contenido fácilmente */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        text-align: center; /* Asegura que el texto esté centrado en su línea */
+        height: 50px; /* Ajusta según tu diseño */
+        width: 40%; /* Ajusta según tu diseño */
+        font-size: 0.8rem;
+        margin-right: 10px;
+    }
+
+    .buscadorParte2{
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;     
+    }
+    
+
+    .modal-content {
+        background: white;
+        max-height: 550px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .divBotonFechas{
+        font-size: 0.8rem;
+    }
+
+    .rangoFechas{
+        font-size: 0.5rem;
+    }
+}
+

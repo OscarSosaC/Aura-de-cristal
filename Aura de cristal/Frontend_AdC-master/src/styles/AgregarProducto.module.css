@@ -1,0 +1,223 @@
+/* Contenedor principal */
+.container {
+  max-width: 800px; /* Ancho máximo */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 20px; /* Espaciado interno */
+  background-color: #fdfdfd; /* Fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 1px solid #ddd; /* Borde sutil */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Títulos */
+.title-form {
+  font-family: Kaushan Script, sans-serif;
+  font-size: 40px; /* Tamaño del título principal */
+  color: #655e5e; /* Color del texto */
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaciado entre elementos */
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Inputs y select */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none; /* Desactivar redimensionamiento */
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #DBBD6B;
+  outline: none;
+  box-shadow: 0 0 5px rgba(219, 189, 107, 0.5);
+}
+
+
+.submitregistrar {
+  display: block;
+  width: 250px;
+  margin: 0 auto; 
+  padding: 12px 20px;
+  background-color: #DBBD6B;
+  color: white;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitregistrar:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  border: 2px solid #cccccc;
+}
+
+.agregarBtn {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #DBA643;
+  border: 2px solid #DBBD6B;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.agregarBtn:hover {
+  background-color: #B8974F;
+  transform: scale(1.05);
+}
+
+.agregarBtn:active {
+  transform: scale(0.95);
+}
+
+.eliminarBtn {
+  font-size: 12px;
+  background-color: #e74c3c;
+}
+
+.eliminarBtn:hover {
+  background-color: #c0392b;
+}
+
+/* Botón de volver */
+.btnVolveradm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: #B8974F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btnVolveradm:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.btnVolveradm:focus {
+  outline: 2px solid var(--main-color);
+  outline-offset: 3px;
+}
+
+/* Contenedor de características */
+.caracteristicaContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9f7e9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.caracteristicaContainer button {
+  background-color: #DBBD6B;
+  color: white;
+}
+
+/* Contenedor de imágenes */
+.imagenContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.imagenContainer span {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Mensajes */
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+  text-align: center;
+}
+
+.success {
+  color: #28a745;
+  font-size: 14px;
+  text-align: center;
+}
+
+.listaCaracteristicas {
+  list-style-type: none; /* Opcional: elimina los puntos de lista */
+  padding: 0;            /* Opcional: elimina el espaciado interno predeterminado */
+  margin: 0;             /* Opcional: elimina el margen predeterminado */
+}
+
+.itemCaracteristica {
+  display: block; /* Asegura que cada elemento ocupe una línea */
+  margin-bottom: 10px; /* Espaciado opcional entre elementos */
+}

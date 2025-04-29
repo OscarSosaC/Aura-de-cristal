@@ -1,0 +1,288 @@
+/* Detail.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.tituloVolver {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: center;
+    color: #565656;
+    text-decoration: underline;
+    width: 100%;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 56% 44%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.contenedorImg {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.imgGrande {
+    width: 95%;
+    margin-right: 15px;
+}
+
+.contenedorImgPequeñas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imgPequeña {
+    height: auto;
+    width: 87%;
+}
+
+.imgPequeñaOpacity {
+    height: auto;
+    width: 100%;
+    opacity: 20%;
+}
+
+.contenedorDetalle {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nombre {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 46.43px;
+    color: #000000;
+}
+
+.precio {
+    font-family: Inria Serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 28.78px;
+}
+
+.disponible {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    color: #A3A3A1;
+}
+
+.boton {
+    width: 261px;
+    height: 57px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.botonMas {
+    align-items: center;
+    appearance: none;
+    background: none;
+    border: var(--zds-line-width) solid var(--color-content-high);
+    border-radius: 0 50% 50% 0;
+    color: #A3A3A1;
+    cursor: pointer;
+    display: flex;
+    font-family: inherit;
+    font-size: inherit;
+    height: 100%;
+    justify-content: center;
+    line-height: inherit;
+    margin: 0;
+    width: 32px;
+}
+
+.contenedorAñadir {
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    border-radius: 30px;
+    border: 1px solid #A3A3A1;
+    width: 172px;
+    height: 56px;
+}
+
+.cantidad {
+    color: #A3A3A1;
+}
+
+.botonMenos {
+    align-items: center;
+    appearance: none;
+    background: none;
+    border: var(--zds-line-width) solid var(--color-content-high);
+    border-radius: 0 50% 50% 0;
+    color: #A3A3A1;
+    cursor: pointer;
+    display: flex;
+    font-family: inherit;
+    font-size: inherit;
+    height: 100%;
+    justify-content: center;
+    line-height: inherit;
+    margin: 0;
+    width: 32px;
+}
+
+.tituloDescripcion {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    color: #000000;
+}
+
+.descripcion {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: #000000;
+}
+
+.titulo {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 69.65px;
+    color: rgba(142, 107, 50, 0.4);
+    text-align: center;
+}
+
+.divImg {
+    position: relative;
+    width: 87%;
+}
+
+.textImg {
+    position: absolute;
+    text-align: center;
+    color: #000000;
+    font-family: 'Kaushan Script';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.22px;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #000000;
+}
+
+.contenedorReserva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    height: 65%;
+    gap:3rem;
+}
+
+.contenedorPoliticasDelProducto {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 25px;
+    width: 261px; /* Para coincidir con el tamaño del boton de reserva*/
+}
+
+.tituloPoliticasDelProducto {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.enlacePoliticasDelProducto {
+    font-style: italic;
+    text-decoration: underline !important;
+    color: currentColor;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .tituloVolver {
+        font-size: 11px;
+        padding-left: 0%;
+        padding-top: 5rem;
+    }
+
+    .contenedor {
+        display: block;
+    }
+
+    .nombre {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .descripcion,
+    .precio {
+        font-size: 12px;
+        font-weight: 400;
+        font-family: inter;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .boton {
+        width: 135px;
+        height: 35px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15.73px;
+        margin: auto;
+    }
+
+    .contenedorAñadir {
+        width: 113px;
+        height: 35px;
+        background-color: #FFFFFF;
+    }
+
+    .contenedorDetalle {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        justify-items: center;
+        margin-top: 10%;
+    }
+
+    .tituloDescripcion {
+        margin-bottom: 5%;
+    }
+
+    .descripcion,
+    .precio {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .textImg {
+        font-size: 11px;
+    }
+}
+

@@ -1,0 +1,92 @@
+.container-adm {
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+/* .back {
+  display: inline-block;
+  width: auto !important;
+  max-width: 200px;
+  margin: 0 auto; 
+} */
+
+.btn-edit {
+  background-color: #f2ca4f;
+  color: white;
+  margin-bottom: 8%;
+  margin-top: 8%;
+}
+
+.btn-elim {
+  background-color: #cf2a28;
+  color: white;
+  margin-bottom: 8%;
+}
+
+.btn-edit, .btn-elim {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.title-form {
+  font-family: Kaushan Script;
+  font-size: 40px;
+  color: #655e5e;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.btn-volv {
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+/* Ensure pagination stays at the bottom */
+.rdt_TablePagination {
+  position: relative !important;;
+  margin-top: 20px !important;;
+}
+
+.rdt_Table {
+  display: flex !important;;
+  flex-direction: column !important;;
+  flex-grow: 1 !important;;
+}
+
+.rdt_Pagination {
+  display: block !important;  /* Force display */
+  justify-content: center !important;;
+  position: relative !important;
+
+}
+
+.parent-container {
+  display: flex;
+  flex-direction: column;  /* Stack items vertically */
+  height: 100%;  /* Allow full height */
+}
+
+/* panel admin no debe estar disponible en movil
+
+@media (min-width: 300px) and (max-width: 1024px) {
+
+  .btn-volv {
+    padding-top: 20%;
+  }
+
+  .container-adm {
+    min-width: 50vh;
+    max-height: 100vh;
+    margin-bottom: 20%;
+  }
+
+  .title-form {
+    font-size: 33px;
+  }
+} */

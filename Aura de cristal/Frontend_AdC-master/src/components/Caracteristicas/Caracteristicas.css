@@ -1,0 +1,95 @@
+.caracteristicas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 20px; /* Espaciado entre los elementos */
+  padding: 20px; /* Espaciado general */
+  max-width: 1200px; 
+  width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+}
+
+.caracteristica-item {
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.caracteristica-contenedor {
+  display: flex;
+  align-items: center; /* Alinear ícono y texto verticalmente */
+  gap: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.icon {
+  font-size: 2rem; /* Tamaño del ícono */
+  color: #000; /* Opcional: fuerza el color negro para algunos casos */
+  filter: grayscale(1); /* Convierte el ícono a blanco y negro */
+  -webkit-filter: grayscale(1); /* Soporte para navegadores basados en WebKit */
+}
+
+.caracteristica-texto h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.caracteristica-texto p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Pantallas medianas */
+@media (max-width: 768px) {
+  .caracteristicas-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    padding: 15px; /* Reduce el padding para pantallas medianas */
+  }
+
+  .caracteristica-item {
+    padding: 0.8rem; /* Ajusta el padding de los items en pantallas medianas */
+  }
+
+  .icon {
+    font-size: 1.8rem; /* Reduce el tamaño de los íconos */
+  }
+
+  .caracteristica-texto h3 {
+    font-size: 16px; /* Ajusta el tamaño del título */
+  }
+
+  .caracteristica-texto p {
+    font-size: 12px; /* Ajusta el tamaño del texto */
+  }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+  .caracteristicas-grid {
+    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    padding: 10px; /* Reduce el padding para pantallas pequeñas */
+  }
+
+  .caracteristica-item {
+    padding: 0.6rem; /* Ajusta el padding de los items en pantallas pequeñas */
+  }
+
+  .caracteristica-contenedor {
+    flex-direction: column; /* Cambiar a diseño vertical */
+    text-align: center; /* Centrar el contenido */
+  }
+
+  .icon {
+    font-size: 1.5rem; /* Reduce aún más el tamaño de los íconos */
+    margin-bottom: 10px; /* Espacio entre el ícono y el texto */
+  }
+
+  .caracteristica-texto h3 {
+    font-size: 14px; /* Ajusta el tamaño del título */
+  }
+
+  .caracteristica-texto p {
+    font-size: 10px; /* Ajusta el tamaño del texto */
+  }
+}
+
+  
